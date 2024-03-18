@@ -1,0 +1,107 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header-style*/
+
+
+
+.logo-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+    gap: 20px;
+}
+
+header{
+
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 37px;
+}
+
+
+
+img{
+    height: 45px;
+}
+
+/* buttom style*/
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+    gap: 10px;
+
+}
+
+#btn {
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 17px;
+
+    padding: 3px 40px;
+
+  }
+
+
+  /* grid */
+
+  .bg-grid{
+    background-color: #7fffd4;
+    padding: 20px;
+  }
+
+#grid {
+    width: 600px;
+    height: 600px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.square {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    background-color: #7fffd4;
+    border: 1px solid black;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square.blue {
+    background-color: rgb(45, 73, 215);
+}
+
+
+/* FOOTER STYLE */
+
+.footer-container{
+    height: 60px;
+    display: flex;
+
+    align-items: center;
+}
+
+p{
+    font-size: 20px;
+    margin-left: 40px;
+}
