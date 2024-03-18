@@ -37,7 +37,9 @@ function generateSquare(number){
 }
 
 //Creo un arrary per tenere le "bombe"
+let bombs = [];
 //Creo un punteggio per il giocatore
+let score = 0;
 //Function per generare le bombe
 
 //Aggiornamento della funzione
