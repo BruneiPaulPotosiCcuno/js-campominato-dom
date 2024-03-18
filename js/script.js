@@ -42,6 +42,8 @@ let bombs = [];
 let score = 0;
 //Function per generare le bombe
 function generateBombs(){
-    
+    while (bombs.length < 16) {
+        let bombPosition = Math.floor(Math.random() * 100) + 1;
+    }
 }
 //Aggiornamento della funzione
