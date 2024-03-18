@@ -44,6 +44,9 @@ let score = 0;
 function generateBombs(){
     while (bombs.length < 16) {
         let bombPosition = Math.floor(Math.random() * 100) + 1;
+        if (!bombs.includes(bombPosition)){
+            bombs.push(bombPosition);
+        }
     }
 }
 //Aggiornamento della funzione
