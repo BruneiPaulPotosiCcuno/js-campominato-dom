@@ -41,5 +41,7 @@ let bombs = [];
 //Creo un punteggio per il giocatore
 let score = 0;
 //Function per generare le bombe
-
+function generateBombs(){
+    
+}
 //Aggiornamento della funzione
