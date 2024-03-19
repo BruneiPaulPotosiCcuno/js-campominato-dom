@@ -28,7 +28,7 @@ const btn = document.querySelector('#btn');
     btn.addEventListener('click', function() {
         const gridMain = document.querySelector('#grid');
         //faccio il reset della grid
-        gridMain.innerHTML = ''
+        gridMain.innerHTML = '';
         //faccio il reset bombs
         bombs = [];
         //faccio il reset points
@@ -40,6 +40,31 @@ const btn = document.querySelector('#btn');
             const newSquare = generateSquare(i);
             // Aggiungo un event listener per il click
             newSquare.addEventListener('click', handleSquareClick);
-            mainGrid.appendChild(newSquare);
+            gridMain.appendChild(newSquare);
         }
     });
+
+    // Funzione per generare una casella della griglia
+function generateSquare(number) {
+    const newSquare = document.createElement('div');
+    newSquare.classList.add('square');
+    newSquare.innerHTML = '<span>' + number + '</span>';
+    return newSquare;
+}
+
+//function per gestire il click nelle cells
+function handleSquareClick() {
+    //ottengo il numero della cell clickta
+    const squareNumber = parseInt(this.texContent);
+    //*cl
+    console.log(squareNumber);
+    if (bombs.includes(squareNumber)) {
+        this.classList.add('red')
+        //emette un alert che hai perso;
+        alert('Hai preso una bomba. Il tuo score e: ' + score);
+        //Reset Score
+        score = 0
+    } else {
+        
+    }
+}
