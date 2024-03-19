@@ -72,6 +72,7 @@ function handleSquareClick() {
 }
 
 //function pers il giocatore se ha vinto
-function name(params) {
-    
+function verifiedWin() {
+    //calcolo il numeo di cells rimanenti con escluso le bombs
+    const restSquares = 100 - bombs.length;
 }
