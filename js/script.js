@@ -29,4 +29,8 @@ const btn = document.querySelector('#btn');
         const gridMain = document.querySelector('#grid');
         //faccio il reset della grid
         gridMain.innerHTML = ''
+        //faccio il reset bombs
+        bombs = [];
+        //faccio il reset points
+        score = 0
     })
