@@ -55,7 +55,7 @@ function generateSquare(number) {
 //function per gestire il click nelle cells
 function handleSquareClick() {
     //ottengo il numero della cell clickta
-    const squareNumber = parseInt(this.texContent);
+    const squareNumber = parseInt(this.textContent);
     //*cl
     console.log(squareNumber);
     if (bombs.includes(squareNumber)) {
