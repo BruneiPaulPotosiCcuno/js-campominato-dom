@@ -32,5 +32,7 @@ const btn = document.querySelector('#btn');
         //faccio il reset bombs
         bombs = [];
         //faccio il reset points
-        score = 0
+        score = 0;
+        //genero le bombe
+        generateBombs();
     })
