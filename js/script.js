@@ -71,4 +71,7 @@ function handleSquareClick() {
     }
 }
 
-
+//function pers il giocatore se ha vinto
+function name(params) {
+    
+}
