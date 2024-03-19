@@ -75,4 +75,9 @@ function handleSquareClick() {
 function verifiedWin() {
     //calcolo il numeo di cells rimanenti con escluso le bombs
     const restSquares = 100 - bombs.length;
+    // Se il score del giocatore e uguale a le celle rimanenti ha vinto
+    if (score === restSquares) {
+        //!FACCIO UNA ALERT CON HAI VINTO
+        alert('GG !! Hai vinto!');
+    }
 }
