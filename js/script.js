@@ -35,4 +35,11 @@ const btn = document.querySelector('#btn');
         score = 0;
         //genero le bombe
         generateBombs();
-    })
+        //Riempo la grid con le cells
+        for (let i = 1; i <= 100; i++) {
+            const newSquare = generateSquare(i);
+            // Aggiungo un event listener per il click
+            newSquare.addEventListener('click', handleSquareClick);
+            mainGrid.appendChild(newSquare);
+        }
+    });
