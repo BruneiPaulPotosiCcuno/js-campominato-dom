@@ -65,6 +65,10 @@ function handleSquareClick() {
         //Reset Score
         score = 0
     } else {
-        
+        this.classList.add('blue');
+        //Aumenta la score
+        score++;
     }
 }
+
+
